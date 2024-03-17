@@ -1,0 +1,854 @@
+root@bd079ac964cf:/# ls -lrt home
+total 44124
+drwxr-xr-x 2 root root      253 Mar 16 06:27 dags
+drwxr-xr-x 2 root root       36 Mar 16 06:27 dashboard
+drwxr-xr-x 2 root root        6 Mar 16 06:27 database
+drwxr-xr-x 2 root root       22 Mar 16 06:27 scripts
+drwxr-xr-x 2 root root      203 Mar 16 06:27 notebooks
+drwxr-xr-x 6 root root      105 Mar 16 06:27 data
+-rw-r--r-- 1 root root 12093729 Mar 16 06:58 Assignment.zip
+drwxr-xr-x 2 root root        6 Mar 16 09:43 mlruns
+drwxr-xr-x 8 root root      176 Mar 17 05:42 Assignment
+-rw-r--r-- 1 root root    40960 Mar 17 11:22 dags.tar
+-rw-r--r-- 1 root root    20480 Mar 17 11:23 dashboard.tar
+-rw-r--r-- 1 root root    10240 Mar 17 11:23 database.tar
+-rw-r--r-- 1 root root    61440 Mar 17 11:25 scripts.tar
+-rw-r--r-- 1 root root 32952320 Mar 17 11:26 notebooks.tar
+drwxr-xr-x 5 root root      149 Mar 17 11:28 airflow
+root@bd079ac964cf:/# pwd
+/
+root@bd079ac964cf:/# 
+root@bd079ac964cf:/# tar -cvf MLOps_Assignment_UpGrad_Sagar_Shinde.tar home
+home/
+home/dags/
+home/dags/constants_data_pipeline.py
+home/dags/constants_drift.py
+home/dags/constants_inference.py
+home/dags/constants_model_building.py
+home/dags/pipeline_data.py
+home/dags/pipeline_drif_monitoring.py
+home/dags/pipeline_inference.py
+home/dags/pipeline_model_building.py
+home/dashboard/
+home/dashboard/main.py
+home/dashboard/test.py
+home/data/
+home/data/data_unseen.csv
+home/data/interim/
+home/data/new/
+home/data/new/churn_logs_new.csv
+home/data/new/members_profile_new.csv
+home/data/new/transactions_logs_new.csv
+home/data/new/user_logs_new.csv
+home/data/processed/
+home/data/profile_report/
+home/data/raw
+home/database/
+home/notebooks/
+home/notebooks/1_Data_preparation.ipynb
+home/notebooks/2_ModelBaseline.ipynb
+home/notebooks/3_Feature_engineering.ipynb
+home/notebooks/4_Model_after_feature_engg.ipynb
+home/notebooks/Model_trainer_lgbm.ipynb
+home/notebooks/New_Data_Filter.ipynb
+home/scripts/
+home/scripts/utils.py
+home/.jarviscloud/
+home/.ipython/
+home/.ipython/profile_default/
+home/.ipython/profile_default/security/
+home/.ipython/profile_default/log/
+home/.ipython/profile_default/startup/
+home/.ipython/profile_default/startup/README
+home/.ipython/profile_default/startup/first.py
+home/.ipython/profile_default/pid/
+home/.ipython/profile_default/ipython_config.py
+home/.ipython/profile_default/ipython_kernel_config.py
+home/.ipython/profile_default/db/
+home/.ipython/profile_default/history.sqlite
+home/airflow/
+home/airflow/airflow.cfg
+home/airflow/webserver_config.py
+home/airflow/logs/
+home/airflow/logs/scheduler/
+home/airflow/logs/scheduler/2024-03-16/
+home/airflow/logs/scheduler/2024-03-17/
+home/airflow/logs/scheduler/2024-03-17/native_dags/
+home/airflow/logs/scheduler/2024-03-17/native_dags/example_dags/
+home/airflow/logs/scheduler/2024-03-17/native_dags/example_dags/tutorial.py.log
+home/airflow/logs/scheduler/2024-03-17/native_dags/example_dags/example_time_delta_sensor_async.py.log
+home/airflow/logs/scheduler/2024-03-17/native_dags/example_dags/example_kubernetes_executor.py.log
+home/airflow/logs/scheduler/2024-03-17/native_dags/example_dags/example_dag_decorator.py.log
+home/airflow/logs/scheduler/2024-03-17/native_dags/example_dags/example_local_kubernetes_executor.py.log
+home/airflow/logs/scheduler/2024-03-17/native_dags/example_dags/example_branch_labels.py.log
+home/airflow/logs/scheduler/2024-03-17/native_dags/example_dags/example_branch_day_of_week_operator.py.log
+home/airflow/logs/scheduler/2024-03-17/native_dags/example_dags/tutorial_etl_dag.py.log
+home/airflow/logs/scheduler/2024-03-17/native_dags/example_dags/tutorial_taskflow_api_etl_virtualenv.py.log
+home/airflow/logs/scheduler/2024-03-17/native_dags/example_dags/example_branch_operator_decorator.py.log
+home/airflow/logs/scheduler/2024-03-17/native_dags/example_dags/example_task_group_decorator.py.log
+home/airflow/logs/scheduler/2024-03-17/native_dags/example_dags/example_bash_operator.py.log
+home/airflow/logs/scheduler/2024-03-17/native_dags/example_dags/example_latest_only.py.log
+home/airflow/logs/scheduler/2024-03-17/native_dags/example_dags/example_xcom.py.log
+home/airflow/logs/scheduler/2024-03-17/native_dags/example_dags/example_python_operator.py.log
+home/airflow/logs/scheduler/2024-03-17/native_dags/example_dags/example_branch_python_dop_operator_3.py.log
+home/airflow/logs/scheduler/2024-03-17/native_dags/example_dags/example_trigger_controller_dag.py.log
+home/airflow/logs/scheduler/2024-03-17/native_dags/example_dags/example_skip_dag.py.log
+home/airflow/logs/scheduler/2024-03-17/native_dags/example_dags/example_short_circuit_operator.py.log
+home/airflow/logs/scheduler/2024-03-17/native_dags/example_dags/example_trigger_target_dag.py.log
+home/airflow/logs/scheduler/2024-03-17/native_dags/example_dags/example_nested_branch_dag.py.log
+home/airflow/logs/scheduler/2024-03-17/native_dags/example_dags/example_latest_only_with_trigger.py.log
+home/airflow/logs/scheduler/2024-03-17/native_dags/example_dags/example_branch_datetime_operator.py.log
+home/airflow/logs/scheduler/2024-03-17/native_dags/example_dags/example_task_group.py.log
+home/airflow/logs/scheduler/2024-03-17/native_dags/example_dags/example_xcomargs.py.log
+home/airflow/logs/scheduler/2024-03-17/native_dags/example_dags/example_external_task_marker_dag.py.log
+home/airflow/logs/scheduler/2024-03-17/native_dags/example_dags/example_sla_dag.py.log
+home/airflow/logs/scheduler/2024-03-17/native_dags/example_dags/example_passing_params_via_test_command.py.log
+home/airflow/logs/scheduler/2024-03-17/native_dags/example_dags/example_subdag_operator.py.log
+home/airflow/logs/scheduler/2024-03-17/native_dags/example_dags/example_complex.py.log
+home/airflow/logs/scheduler/2024-03-17/native_dags/example_dags/tutorial_taskflow_api_etl.py.log
+home/airflow/logs/scheduler/2024-03-17/native_dags/example_dags/example_branch_operator.py.log
+home/airflow/logs/scheduler/2024-03-17/native_dags/example_dags/plugins/
+home/airflow/logs/scheduler/2024-03-17/native_dags/example_dags/plugins/workday.py.log
+home/airflow/logs/scheduler/2024-03-17/native_dags/example_dags/subdags/
+home/airflow/logs/scheduler/2024-03-17/native_dags/example_dags/subdags/subdag.py.log
+home/airflow/logs/scheduler/2024-03-17/Lead_scoring_training_pipeline/
+home/airflow/logs/scheduler/2024-03-17/Lead_scoring_training_pipeline/utils.py.log
+home/airflow/logs/scheduler/2024-03-17/Lead_scoring_training_pipeline/constants.py.log
+home/airflow/logs/scheduler/2024-03-17/Lead_scoring_training_pipeline/lead_scoring_training_pipeline.py.log
+home/airflow/logs/scheduler/2024-03-17/Lead_scoring_inference_pipeline/
+home/airflow/logs/scheduler/2024-03-17/Lead_scoring_inference_pipeline/lead_scoring_inference_pipeline.py.log
+home/airflow/logs/scheduler/2024-03-17/Lead_scoring_inference_pipeline/constants.py.log
+home/airflow/logs/scheduler/2024-03-17/Lead_scoring_inference_pipeline/utils.py.log
+home/airflow/logs/scheduler/latest
+home/airflow/logs/dag_processor_manager/
+home/airflow/logs/dag_processor_manager/dag_processor_manager.log
+home/airflow/airflow.db
+home/airflow/.ipynb_checkpoints/
+home/airflow/.ipynb_checkpoints/airflow-checkpoint.cfg
+home/airflow/dags/
+home/airflow/dags/Lead_scoring_training_pipeline/
+home/airflow/dags/Lead_scoring_training_pipeline/utils.py
+home/airflow/dags/Lead_scoring_training_pipeline/__pycache__/
+home/airflow/dags/Lead_scoring_training_pipeline/__pycache__/utils.cpython-38.pyc
+home/airflow/dags/Lead_scoring_training_pipeline/__pycache__/constants.cpython-38.pyc
+home/airflow/dags/Lead_scoring_training_pipeline/__pycache__/lead_scoring_training_pipeline.cpython-38.pyc
+home/airflow/dags/Lead_scoring_training_pipeline/constants.py
+home/airflow/dags/Lead_scoring_training_pipeline/data/
+home/airflow/dags/Lead_scoring_training_pipeline/data/lead_scoring_data_cleaning.db
+home/airflow/dags/Lead_scoring_training_pipeline/data/.ipynb_checkpoints/
+home/airflow/dags/Lead_scoring_training_pipeline/.ipynb_checkpoints/
+home/airflow/dags/Lead_scoring_training_pipeline/lead_scoring_training_pipeline.py
+home/airflow/dags/.ipynb_checkpoints/
+home/airflow/dags/Lead_scoring_data_pipeline/
+home/airflow/dags/Lead_scoring_data_pipeline/data/
+home/airflow/dags/Lead_scoring_data_pipeline/data/lead_scoring_data_cleaning_inference.db
+home/airflow/dags/Lead_scoring_data_pipeline/data/.ipynb_checkpoints/
+home/airflow/dags/Lead_scoring_data_pipeline/.ipynb_checkpoints/
+home/airflow/dags/Lead_scoring_inference_pipeline/
+home/airflow/dags/Lead_scoring_inference_pipeline/utils.py
+home/airflow/dags/Lead_scoring_inference_pipeline/constants.py
+home/airflow/dags/Lead_scoring_inference_pipeline/lead_scoring_inference_pipeline.py
+home/airflow/dags/Lead_scoring_inference_pipeline/__pycache__/
+home/airflow/dags/Lead_scoring_inference_pipeline/__pycache__/lead_scoring_inference_pipeline.cpython-38.pyc
+home/airflow/dags/Lead_scoring_inference_pipeline/__pycache__/constants.cpython-38.pyc
+home/airflow/airflow-webserver.pid
+tar: home/airflow: file changed as we read it
+home/.config/
+home/.config/code-server/
+home/.config/code-server/config.yaml
+home/.config/matplotlib/
+home/.local/
+home/.local/share/
+home/.local/share/code-server/
+home/.local/share/code-server/coder-logs/
+home/.local/share/code-server/coder-logs/code-server-stdout.log
+home/.local/share/code-server/coder-logs/code-server-stderr.log
+home/.local/share/jupyter/
+home/.local/share/jupyter/runtime/
+home/.local/share/jupyter/runtime/notebook_cookie_secret
+home/.local/share/jupyter/runtime/nbserver-158.json
+home/.local/share/jupyter/runtime/nbserver-158-open.html
+home/.local/share/jupyter/runtime/kernel-bf52cdd7-ed30-4a68-b4ca-137caaef4603.json
+home/.local/share/jupyter/runtime/kernel-b6467d61-1eb4-4dbe-aa18-0a212d07b264.json
+home/.local/share/jupyter/runtime/kernel-51801beb-51f1-43f4-ba10-8d29adb132ef.json
+home/.local/share/jupyter/runtime/kernel-84033421-797e-4074-96ed-e797a1988c0a.json
+home/.local/share/jupyter/runtime/kernel-aab8da8c-add9-4386-abe7-6454d7808943.json
+home/.local/share/jupyter/runtime/nbserver-132.json
+home/.local/share/jupyter/runtime/nbserver-132-open.html
+home/.local/share/jupyter/runtime/kernel-9866c8b5-69d5-4cec-af2e-267488b443b9.json
+home/.local/share/jupyter/runtime/kernel-17cf3d06-9dc6-411a-b1ab-381b1587b25b.json
+home/.local/share/jupyter/runtime/kernel-14d8109f-0f4b-42c1-ade3-c833071a2504.json
+home/.local/share/jupyter/runtime/nbserver-133.json
+home/.local/share/jupyter/runtime/nbserver-133-open.html
+home/.local/share/jupyter/runtime/kernel-5a005428-3e1e-4432-88f0-a0d569ab954d.json
+home/.local/share/jupyter/runtime/kernel-e5eb3867-2903-46f0-a5f7-7135a7dc5f8c.json
+home/.local/share/jupyter/runtime/kernel-a776327e-cb69-422d-8aaf-e62ef5f11c6c.json
+home/.local/share/jupyter/runtime/kernel-5c2f0650-19a6-42ea-a1e1-e730532fead8.json
+home/.local/share/jupyter/runtime/kernel-cc93bdc9-1316-47b9-85dd-c347f5b0d83f.json
+home/.local/share/jupyter/runtime/kernel-4c4de039-0f5e-4a0c-9c00-2a45dbeb77d9.json
+home/.local/share/jupyter/nbsignatures.db
+home/.local/share/jupyter/notebook_secret
+home/.local/share/Trash/
+home/.local/share/Trash/files/
+home/.local/share/Trash/files/Assignment/
+home/.local/share/Trash/files/Assignment/01_data_pipeline/
+home/.local/share/Trash/files/Assignment/01_data_pipeline/INSTRUCTIONS.txt
+home/.local/share/Trash/files/Assignment/01_data_pipeline/notebooks/
+home/.local/share/Trash/files/Assignment/01_data_pipeline/notebooks/Data/
+home/.local/share/Trash/files/Assignment/01_data_pipeline/notebooks/Data/cleaned_data.csv
+home/.local/share/Trash/files/Assignment/01_data_pipeline/notebooks/Data/leadscoring.csv
+home/.local/share/Trash/files/Assignment/01_data_pipeline/notebooks/data_cleaning_template.ipynb
+home/.local/share/Trash/files/Assignment/01_data_pipeline/notebooks/Maps/
+home/.local/share/Trash/files/Assignment/01_data_pipeline/notebooks/Maps/.ipynb_checkpoints/
+home/.local/share/Trash/files/Assignment/01_data_pipeline/notebooks/Maps/.ipynb_checkpoints/city_tier-checkpoint.py
+home/.local/share/Trash/files/Assignment/01_data_pipeline/notebooks/Maps/.ipynb_checkpoints/interaction_mapping-checkpoint.csv
+home/.local/share/Trash/files/Assignment/01_data_pipeline/notebooks/Maps/__pycache__/
+home/.local/share/Trash/files/Assignment/01_data_pipeline/notebooks/Maps/__pycache__/city_tier.cpython-37.pyc
+home/.local/share/Trash/files/Assignment/01_data_pipeline/notebooks/Maps/__pycache__/city_tier.cpython-38.pyc
+home/.local/share/Trash/files/Assignment/01_data_pipeline/notebooks/Maps/city_tier.py
+home/.local/share/Trash/files/Assignment/01_data_pipeline/notebooks/Maps/interaction_mapping.csv
+home/.local/share/Trash/files/Assignment/01_data_pipeline/notebooks/profile_report/
+home/.local/share/Trash/files/Assignment/01_data_pipeline/notebooks/profile_report/.ipynb_checkpoints/
+home/.local/share/Trash/files/Assignment/01_data_pipeline/notebooks/profile_report/.ipynb_checkpoints/cleaned_data_report-checkpoint.html
+home/.local/share/Trash/files/Assignment/01_data_pipeline/notebooks/profile_report/cleaned_data_report.html
+home/.local/share/Trash/files/Assignment/01_data_pipeline/notebooks/profile_report/raw_data_report.html
+home/.local/share/Trash/files/Assignment/01_data_pipeline/scripts/
+home/.local/share/Trash/files/Assignment/01_data_pipeline/scripts/city_tier_mapping.py
+home/.local/share/Trash/files/Assignment/01_data_pipeline/scripts/constants.py
+home/.local/share/Trash/files/Assignment/01_data_pipeline/scripts/data/
+home/.local/share/Trash/files/Assignment/01_data_pipeline/scripts/data/leadscoring.csv
+home/.local/share/Trash/files/Assignment/01_data_pipeline/scripts/data_validation_checks.py
+home/.local/share/Trash/files/Assignment/01_data_pipeline/scripts/interaction_mapping.csv
+home/.local/share/Trash/files/Assignment/01_data_pipeline/scripts/lead_scoring_data_pipeline.py
+home/.local/share/Trash/files/Assignment/01_data_pipeline/scripts/leadscoring_test.csv
+home/.local/share/Trash/files/Assignment/01_data_pipeline/scripts/schema.py
+home/.local/share/Trash/files/Assignment/01_data_pipeline/scripts/significant_categorical_level.py
+home/.local/share/Trash/files/Assignment/01_data_pipeline/scripts/test_with_pytest.py
+home/.local/share/Trash/files/Assignment/01_data_pipeline/scripts/unit_test_cases.db
+home/.local/share/Trash/files/Assignment/01_data_pipeline/scripts/utils.py
+home/.local/share/Trash/files/Assignment/02_training_pipeline/
+home/.local/share/Trash/files/Assignment/02_training_pipeline/INSTRUCTIONS_training.txt
+home/.local/share/Trash/files/Assignment/02_training_pipeline/notebooks/
+home/.local/share/Trash/files/Assignment/02_training_pipeline/notebooks/Data/
+home/.local/share/Trash/files/Assignment/02_training_pipeline/notebooks/lead_scoring_model_experimentation.ipynb
+home/.local/share/Trash/files/Assignment/02_training_pipeline/scripts/
+home/.local/share/Trash/files/Assignment/02_training_pipeline/scripts/constants.py
+home/.local/share/Trash/files/Assignment/02_training_pipeline/scripts/lead_scoring_training_pipeline.py
+home/.local/share/Trash/files/Assignment/02_training_pipeline/scripts/utils.py
+home/.local/share/Trash/files/Assignment/03_inference_pipeline/
+home/.local/share/Trash/files/Assignment/03_inference_pipeline/data/
+home/.local/share/Trash/files/Assignment/03_inference_pipeline/data/leadscoring_inference.csv
+home/.local/share/Trash/files/Assignment/03_inference_pipeline/INSTRUCTIONS_inference.txt
+home/.local/share/Trash/files/Assignment/03_inference_pipeline/scripts/
+home/.local/share/Trash/files/Assignment/03_inference_pipeline/scripts/constants.py
+home/.local/share/Trash/files/Assignment/03_inference_pipeline/scripts/lead_scoring_inference_pipeline.py
+home/.local/share/Trash/files/Assignment/03_inference_pipeline/scripts/utils.py
+home/.local/share/Trash/files/data_cleaning_template.ipynb
+home/.local/share/Trash/files/Untitled.ipynb
+home/.local/share/Trash/info/
+home/.local/share/Trash/info/Assignment.trashinfo
+home/.local/share/Trash/info/data_cleaning_template.ipynb.trashinfo
+home/.local/share/Trash/info/Untitled.ipynb.trashinfo
+home/.jupyter/
+home/.jupyter/migrated
+home/.jupyter/lab/
+home/.jupyter/lab/workspaces/
+home/.jupyter/lab/workspaces/default-37a8.jupyterlab-workspace
+home/.jupyter/lab/workspaces/auto-d-8a94.jupyterlab-workspace
+home/.jupyter/lab/workspaces/auto-7-ab6f.jupyterlab-workspace
+home/.ipynb_checkpoints/
+home/.cache/
+home/.cache/pip/
+home/.cache/pip/http/
+home/.cache/pip/http/a/
+home/.cache/pip/http/a/1/
+home/.cache/pip/http/a/1/9/
+home/.cache/pip/http/a/1/9/5/
+home/.cache/pip/http/a/1/9/5/3/
+home/.cache/pip/http/a/1/9/5/3/a19537d3cf37c122db841d6fe4cd322bc10d1a558bb00d146b85cb9a
+home/.cache/pip/http/4/
+home/.cache/pip/http/4/f/
+home/.cache/pip/http/4/f/0/
+home/.cache/pip/http/4/f/0/7/
+home/.cache/pip/http/4/f/0/7/7/
+home/.cache/pip/http/4/f/0/7/7/4f0777a90bba04f2f82ba7e4254c192855e153ed24d9f3bee10c28c5
+home/.cache/pip/http/d/
+home/.cache/pip/http/d/3/
+home/.cache/pip/http/d/3/3/
+home/.cache/pip/http/d/3/3/c/
+home/.cache/pip/http/d/3/3/c/5/
+home/.cache/pip/http/d/3/3/c/5/d33c5caf855a224e0c781092005779bc7422a6128b86b9842036b6bf
+home/.cache/pip/selfcheck/
+home/.cache/pip/selfcheck/ab2bb442149194bcbab5700d8f932112632ba9320db09910f4a4422b
+home/.cache/pip/wheels/
+home/.cache/pip/wheels/db/
+home/.cache/pip/wheels/db/56/
+home/.cache/pip/wheels/db/56/22/
+home/.cache/pip/wheels/db/56/22/efcc8a72dd2e0ce8c7fcf8cf93a84a1ce5f01f5479e82a1823/
+home/.cache/pip/wheels/db/56/22/efcc8a72dd2e0ce8c7fcf8cf93a84a1ce5f01f5479e82a1823/maps-5.1.1-py3-none-any.whl
+home/.cache/matplotlib/
+home/.cache/matplotlib/fontlist-v330.json
+home/.cache/jedi/
+home/.cache/jedi/CPython-38-33/
+home/.cache/jedi/CPython-38-33/29eef7fec4dc8afb41b76ae425aa0d6225daff32de9e10abf7a1ce54fa5907f1-7d91c8c08b1c6a252e170833a5d732acbe7b2ff0178345bd6de6db33991ac5fc.pkl
+home/.cache/jedi/CPython-38-33/29eef7fec4dc8afb41b76ae425aa0d6225daff32de9e10abf7a1ce54fa5907f1-8c19dca9082476a0d88afb5463be716b9248c3bf3ad5a307ae5356c549a59f71.pkl
+home/.cache/jedi/PARSO-CACHE-LOCK
+home/Assignment.zip
+home/Assignment/
+home/Assignment/01_data_pipeline/
+home/Assignment/01_data_pipeline/INSTRUCTIONS.txt
+home/Assignment/01_data_pipeline/notebooks/
+home/Assignment/01_data_pipeline/notebooks/Data/
+home/Assignment/01_data_pipeline/notebooks/Data/cleaned_data.csv
+home/Assignment/01_data_pipeline/notebooks/Data/leadscoring.csv
+home/Assignment/01_data_pipeline/notebooks/data_cleaning_template.ipynb
+home/Assignment/01_data_pipeline/notebooks/Maps/
+home/Assignment/01_data_pipeline/notebooks/Maps/.ipynb_checkpoints/
+home/Assignment/01_data_pipeline/notebooks/Maps/.ipynb_checkpoints/city_tier-checkpoint.py
+home/Assignment/01_data_pipeline/notebooks/Maps/.ipynb_checkpoints/interaction_mapping-checkpoint.csv
+home/Assignment/01_data_pipeline/notebooks/Maps/__pycache__/
+home/Assignment/01_data_pipeline/notebooks/Maps/__pycache__/city_tier.cpython-37.pyc
+home/Assignment/01_data_pipeline/notebooks/Maps/__pycache__/city_tier.cpython-38.pyc
+home/Assignment/01_data_pipeline/notebooks/Maps/city_tier.py
+home/Assignment/01_data_pipeline/notebooks/Maps/interaction_mapping.csv
+home/Assignment/01_data_pipeline/notebooks/profile_report/
+home/Assignment/01_data_pipeline/notebooks/profile_report/.ipynb_checkpoints/
+home/Assignment/01_data_pipeline/notebooks/profile_report/.ipynb_checkpoints/cleaned_data_report-checkpoint.html
+home/Assignment/01_data_pipeline/notebooks/profile_report/cleaned_data_report.html
+home/Assignment/01_data_pipeline/notebooks/profile_report/raw_data_report.html
+home/Assignment/01_data_pipeline/notebooks/.ipynb_checkpoints/
+home/Assignment/01_data_pipeline/notebooks/.ipynb_checkpoints/data_cleaning_template-checkpoint.ipynb
+home/Assignment/01_data_pipeline/scripts/
+home/Assignment/01_data_pipeline/scripts/city_tier_mapping.py
+home/Assignment/01_data_pipeline/scripts/constants.py
+home/Assignment/01_data_pipeline/scripts/data/
+home/Assignment/01_data_pipeline/scripts/data/leadscoring.csv
+home/Assignment/01_data_pipeline/scripts/data_validation_checks.py
+home/Assignment/01_data_pipeline/scripts/interaction_mapping.csv
+home/Assignment/01_data_pipeline/scripts/lead_scoring_data_pipeline.py
+home/Assignment/01_data_pipeline/scripts/leadscoring_test.csv
+home/Assignment/01_data_pipeline/scripts/schema.py
+home/Assignment/01_data_pipeline/scripts/significant_categorical_level.py
+home/Assignment/01_data_pipeline/scripts/test_with_pytest.py
+home/Assignment/01_data_pipeline/scripts/unit_test_cases.db
+home/Assignment/01_data_pipeline/scripts/utils.py
+home/Assignment/01_data_pipeline/scripts/.ipynb_checkpoints/
+home/Assignment/01_data_pipeline/scripts/.ipynb_checkpoints/utils-checkpoint.py
+home/Assignment/01_data_pipeline/scripts/.ipynb_checkpoints/constants-checkpoint.py
+home/Assignment/01_data_pipeline/.ipynb_checkpoints/
+home/Assignment/01_data_pipeline/.ipynb_checkpoints/INSTRUCTIONS-checkpoint.txt
+home/Assignment/03_inference_pipeline/
+home/Assignment/03_inference_pipeline/data/
+home/Assignment/03_inference_pipeline/data/leadscoring_inference.csv
+home/Assignment/03_inference_pipeline/INSTRUCTIONS_inference.txt
+home/Assignment/03_inference_pipeline/scripts/
+home/Assignment/03_inference_pipeline/scripts/constants.py
+home/Assignment/03_inference_pipeline/scripts/lead_scoring_inference_pipeline.py
+home/Assignment/03_inference_pipeline/scripts/utils.py
+home/Assignment/03_inference_pipeline/scripts/.ipynb_checkpoints/
+home/Assignment/03_inference_pipeline/scripts/.ipynb_checkpoints/constants-checkpoint.py
+home/Assignment/03_inference_pipeline/scripts/.ipynb_checkpoints/utils-checkpoint.py
+home/Assignment/03_inference_pipeline/scripts/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+home/Assignment/mlruns/
+home/Assignment/Lead_scoring_mlflow_production.db
+home/Assignment/777/
+home/Assignment/training_pipeline/
+home/Assignment/training_pipeline/INSTRUCTIONS_training.txt
+home/Assignment/training_pipeline/notebooks/
+home/Assignment/training_pipeline/notebooks/Data/
+home/Assignment/training_pipeline/notebooks/Data/cleaned_data.csv
+home/Assignment/training_pipeline/notebooks/lead_scoring_model_experimentation.ipynb
+home/Assignment/training_pipeline/notebooks/.ipynb_checkpoints/
+home/Assignment/training_pipeline/notebooks/.ipynb_checkpoints/lead_scoring_model_experimentation-checkpoint.ipynb
+home/Assignment/training_pipeline/notebooks/logs.log
+home/Assignment/training_pipeline/notebooks/lead_scoring_model_experimentation.db
+home/Assignment/training_pipeline/scripts/
+home/Assignment/training_pipeline/scripts/constants.py
+home/Assignment/training_pipeline/scripts/lead_scoring_training_pipeline.py
+home/Assignment/training_pipeline/scripts/utils.py
+home/Assignment/training_pipeline/scripts/.ipynb_checkpoints/
+home/Assignment/training_pipeline/scripts/.ipynb_checkpoints/lead_scoring_training_pipeline-checkpoint.py
+home/Assignment/training_pipeline/scripts/.ipynb_checkpoints/utils-checkpoint.py
+home/Assignment/training_pipeline/scripts/.ipynb_checkpoints/constants-checkpoint.py
+home/Assignment/training_pipeline/scripts/mlruns/
+home/Assignment/training_pipeline/scripts/mlruns/0/
+home/Assignment/training_pipeline/scripts/mlruns/0/meta.yaml
+home/Assignment/training_pipeline/scripts/mlruns/.trash/
+home/Assignment/training_pipeline/.ipynb_checkpoints/
+home/Assignment/training_pipeline/.ipynb_checkpoints/INSTRUCTIONS_training-checkpoint.txt
+home/Assignment/.ipynb_checkpoints/
+home/mlruns/
+home/dags.tar
+home/dashboard.tar
+home/database.tar
+home/scripts.tar
+home/notebooks.tar
+root@bd079ac964cf:~# pwd
+/home
+root@bd079ac964cf:~# 
+root@bd079ac964cf:~# ls -lrt
+total 11812
+drwxr-xr-x 2 root root      253 Mar 16 06:27 dags
+drwxr-xr-x 2 root root       36 Mar 16 06:27 dashboard
+drwxr-xr-x 2 root root        6 Mar 16 06:27 database
+drwxr-xr-x 2 root root       22 Mar 16 06:27 scripts
+drwxr-xr-x 2 root root      203 Mar 16 06:27 notebooks
+drwxr-xr-x 6 root root      105 Mar 16 06:27 data
+-rw-r--r-- 1 root root 12093729 Mar 16 06:58 Assignment.zip
+drwxr-xr-x 2 root root        6 Mar 16 09:43 mlruns
+drwxr-xr-x 8 root root      176 Mar 17 05:42 Assignment
+drwxr-xr-x 5 root root      149 Mar 17 11:22 airflow
+root@bd079ac964cf:~# 
+root@bd079ac964cf:~# tar -cvf dags.tar dags
+dags/
+dags/constants_data_pipeline.py
+dags/constants_drift.py
+dags/constants_inference.py
+dags/constants_model_building.py
+dags/pipeline_data.py
+dags/pipeline_drif_monitoring.py
+dags/pipeline_inference.py
+dags/pipeline_model_building.py
+root@bd079ac964cf:~# 
+root@bd079ac964cf:~# tar -cvf dashboard.tar dashboard
+dashboard/
+dashboard/main.py
+dashboard/test.py
+root@bd079ac964cf:~# tar -cvf data
+data/     database/ 
+root@bd079ac964cf:~# tar -cvf database.tar database
+database/
+root@bd079ac964cf:~# tar -cvf scripts.tar scripts
+scripts/
+scripts/utils.py
+root@bd079ac964cf:~# tar -cvf notebooks.tar notebooks
+notebooks/
+notebooks/1_Data_preparation.ipynb
+notebooks/2_ModelBaseline.ipynb
+notebooks/3_Feature_engineering.ipynb
+notebooks/4_Model_after_feature_engg.ipynb
+notebooks/Model_trainer_lgbm.ipynb
+notebooks/New_Data_Filter.ipynb
+root@bd079ac964cf:~# 
+root@bd079ac964cf:~# tar -cvf data.tar ^C
+root@bd079ac964cf:~# 
+root@bd079ac964cf:~# 
+root@bd079ac964cf:~# pwd
+/home
+root@bd079ac964cf:~# cd ..
+root@bd079ac964cf:/# 
+root@bd079ac964cf:/# ls -lrt
+total 88
+drwxr-xr-x    2 root root 4096 Apr 15  2020 boot
+lrwxrwxrwx    1 root root    8 Jan 13  2022 sbin -> usr/sbin
+lrwxrwxrwx    1 root root   10 Jan 13  2022 libx32 -> usr/libx32
+lrwxrwxrwx    1 root root    9 Jan 13  2022 lib64 -> usr/lib64
+lrwxrwxrwx    1 root root    9 Jan 13  2022 lib32 -> usr/lib32
+lrwxrwxrwx    1 root root    7 Jan 13  2022 lib -> usr/lib
+lrwxrwxrwx    1 root root    7 Jan 13  2022 bin -> usr/bin
+drwxr-xr-x    2 root root 4096 Jan 13  2022 srv
+drwxr-xr-x    2 root root 4096 Jan 13  2022 mnt
+drwxr-xr-x    2 root root 4096 Jan 13  2022 media
+drwxr-xr-x    1 root root 4096 Jan 13  2022 var
+drwxr-xr-x    1 root root 4096 Feb  9  2022 usr
+drwxr-xr-x    3 root root 4096 Feb  9  2022 nvidia
+drwxr-xr-x    2 root root 4096 Feb 15  2022 rapids
+drwxr-xr-x    1 root root 4096 Feb 15  2022 opt
+drwxrwxrwx    1 root root 4096 Aug  9  2022 workspace
+-rwxrwxr-x    1 root root 1588 Sep 10  2022 docker-entrypoint.sh
+drwxrwxr-x    8 root root 4096 Oct 24  2022 umlops
+drwxr-xr-x    2 root root  104 Mar 13 07:54 raw
+dr-xr-xr-x   13 root root    0 Mar 17 07:44 sys
+dr-xr-xr-x 1270 root root    0 Mar 17 07:44 proc
+drwxr-xr-x    5 root root  420 Mar 17 07:44 dev
+drwxr-xr-x    1 root root 4096 Mar 17 07:44 run
+drwxr-xr-x    1 root root 4096 Mar 17 07:44 etc
+drwx------    1 root root 4096 Mar 17 07:45 root
+drwxrwxrwt    1 root root 4096 Mar 17 10:44 tmp
+drwxr-xr-x   18 root root 4096 Mar 17 11:26 home
+root@bd079ac964cf:/# ls -lrt home
+total 44124
+drwxr-xr-x 2 root root      253 Mar 16 06:27 dags
+drwxr-xr-x 2 root root       36 Mar 16 06:27 dashboard
+drwxr-xr-x 2 root root        6 Mar 16 06:27 database
+drwxr-xr-x 2 root root       22 Mar 16 06:27 scripts
+drwxr-xr-x 2 root root      203 Mar 16 06:27 notebooks
+drwxr-xr-x 6 root root      105 Mar 16 06:27 data
+-rw-r--r-- 1 root root 12093729 Mar 16 06:58 Assignment.zip
+drwxr-xr-x 2 root root        6 Mar 16 09:43 mlruns
+drwxr-xr-x 8 root root      176 Mar 17 05:42 Assignment
+-rw-r--r-- 1 root root    40960 Mar 17 11:22 dags.tar
+-rw-r--r-- 1 root root    20480 Mar 17 11:23 dashboard.tar
+-rw-r--r-- 1 root root    10240 Mar 17 11:23 database.tar
+-rw-r--r-- 1 root root    61440 Mar 17 11:25 scripts.tar
+-rw-r--r-- 1 root root 32952320 Mar 17 11:26 notebooks.tar
+drwxr-xr-x 5 root root      149 Mar 17 11:28 airflow
+root@bd079ac964cf:/# pwd
+/
+root@bd079ac964cf:/# 
+root@bd079ac964cf:/# tar -cvf MLOps_Assignment_UpGrad_Sagar_Shinde.tar home
+home/
+home/dags/
+home/dags/constants_data_pipeline.py
+home/dags/constants_drift.py
+home/dags/constants_inference.py
+home/dags/constants_model_building.py
+home/dags/pipeline_data.py
+home/dags/pipeline_drif_monitoring.py
+home/dags/pipeline_inference.py
+home/dags/pipeline_model_building.py
+home/dashboard/
+home/dashboard/main.py
+home/dashboard/test.py
+home/data/
+home/data/data_unseen.csv
+home/data/interim/
+home/data/new/
+home/data/new/churn_logs_new.csv
+home/data/new/members_profile_new.csv
+home/data/new/transactions_logs_new.csv
+home/data/new/user_logs_new.csv
+home/data/processed/
+home/data/profile_report/
+home/data/raw
+home/database/
+home/notebooks/
+home/notebooks/1_Data_preparation.ipynb
+home/notebooks/2_ModelBaseline.ipynb
+home/notebooks/3_Feature_engineering.ipynb
+home/notebooks/4_Model_after_feature_engg.ipynb
+home/notebooks/Model_trainer_lgbm.ipynb
+home/notebooks/New_Data_Filter.ipynb
+home/scripts/
+home/scripts/utils.py
+home/.jarviscloud/
+home/.ipython/
+home/.ipython/profile_default/
+home/.ipython/profile_default/security/
+home/.ipython/profile_default/log/
+home/.ipython/profile_default/startup/
+home/.ipython/profile_default/startup/README
+home/.ipython/profile_default/startup/first.py
+home/.ipython/profile_default/pid/
+home/.ipython/profile_default/ipython_config.py
+home/.ipython/profile_default/ipython_kernel_config.py
+home/.ipython/profile_default/db/
+home/.ipython/profile_default/history.sqlite
+home/airflow/
+home/airflow/airflow.cfg
+home/airflow/webserver_config.py
+home/airflow/logs/
+home/airflow/logs/scheduler/
+home/airflow/logs/scheduler/2024-03-16/
+home/airflow/logs/scheduler/2024-03-17/
+home/airflow/logs/scheduler/2024-03-17/native_dags/
+home/airflow/logs/scheduler/2024-03-17/native_dags/example_dags/
+home/airflow/logs/scheduler/2024-03-17/native_dags/example_dags/tutorial.py.log
+home/airflow/logs/scheduler/2024-03-17/native_dags/example_dags/example_time_delta_sensor_async.py.log
+home/airflow/logs/scheduler/2024-03-17/native_dags/example_dags/example_kubernetes_executor.py.log
+home/airflow/logs/scheduler/2024-03-17/native_dags/example_dags/example_dag_decorator.py.log
+home/airflow/logs/scheduler/2024-03-17/native_dags/example_dags/example_local_kubernetes_executor.py.log
+home/airflow/logs/scheduler/2024-03-17/native_dags/example_dags/example_branch_labels.py.log
+home/airflow/logs/scheduler/2024-03-17/native_dags/example_dags/example_branch_day_of_week_operator.py.log
+home/airflow/logs/scheduler/2024-03-17/native_dags/example_dags/tutorial_etl_dag.py.log
+home/airflow/logs/scheduler/2024-03-17/native_dags/example_dags/tutorial_taskflow_api_etl_virtualenv.py.log
+home/airflow/logs/scheduler/2024-03-17/native_dags/example_dags/example_branch_operator_decorator.py.log
+home/airflow/logs/scheduler/2024-03-17/native_dags/example_dags/example_task_group_decorator.py.log
+home/airflow/logs/scheduler/2024-03-17/native_dags/example_dags/example_bash_operator.py.log
+home/airflow/logs/scheduler/2024-03-17/native_dags/example_dags/example_latest_only.py.log
+home/airflow/logs/scheduler/2024-03-17/native_dags/example_dags/example_xcom.py.log
+home/airflow/logs/scheduler/2024-03-17/native_dags/example_dags/example_python_operator.py.log
+home/airflow/logs/scheduler/2024-03-17/native_dags/example_dags/example_branch_python_dop_operator_3.py.log
+home/airflow/logs/scheduler/2024-03-17/native_dags/example_dags/example_trigger_controller_dag.py.log
+home/airflow/logs/scheduler/2024-03-17/native_dags/example_dags/example_skip_dag.py.log
+home/airflow/logs/scheduler/2024-03-17/native_dags/example_dags/example_short_circuit_operator.py.log
+home/airflow/logs/scheduler/2024-03-17/native_dags/example_dags/example_trigger_target_dag.py.log
+home/airflow/logs/scheduler/2024-03-17/native_dags/example_dags/example_nested_branch_dag.py.log
+home/airflow/logs/scheduler/2024-03-17/native_dags/example_dags/example_latest_only_with_trigger.py.log
+home/airflow/logs/scheduler/2024-03-17/native_dags/example_dags/example_branch_datetime_operator.py.log
+home/airflow/logs/scheduler/2024-03-17/native_dags/example_dags/example_task_group.py.log
+home/airflow/logs/scheduler/2024-03-17/native_dags/example_dags/example_xcomargs.py.log
+home/airflow/logs/scheduler/2024-03-17/native_dags/example_dags/example_external_task_marker_dag.py.log
+home/airflow/logs/scheduler/2024-03-17/native_dags/example_dags/example_sla_dag.py.log
+home/airflow/logs/scheduler/2024-03-17/native_dags/example_dags/example_passing_params_via_test_command.py.log
+home/airflow/logs/scheduler/2024-03-17/native_dags/example_dags/example_subdag_operator.py.log
+home/airflow/logs/scheduler/2024-03-17/native_dags/example_dags/example_complex.py.log
+home/airflow/logs/scheduler/2024-03-17/native_dags/example_dags/tutorial_taskflow_api_etl.py.log
+home/airflow/logs/scheduler/2024-03-17/native_dags/example_dags/example_branch_operator.py.log
+home/airflow/logs/scheduler/2024-03-17/native_dags/example_dags/plugins/
+home/airflow/logs/scheduler/2024-03-17/native_dags/example_dags/plugins/workday.py.log
+home/airflow/logs/scheduler/2024-03-17/native_dags/example_dags/subdags/
+home/airflow/logs/scheduler/2024-03-17/native_dags/example_dags/subdags/subdag.py.log
+home/airflow/logs/scheduler/2024-03-17/Lead_scoring_training_pipeline/
+home/airflow/logs/scheduler/2024-03-17/Lead_scoring_training_pipeline/utils.py.log
+home/airflow/logs/scheduler/2024-03-17/Lead_scoring_training_pipeline/constants.py.log
+home/airflow/logs/scheduler/2024-03-17/Lead_scoring_training_pipeline/lead_scoring_training_pipeline.py.log
+home/airflow/logs/scheduler/2024-03-17/Lead_scoring_inference_pipeline/
+home/airflow/logs/scheduler/2024-03-17/Lead_scoring_inference_pipeline/lead_scoring_inference_pipeline.py.log
+home/airflow/logs/scheduler/2024-03-17/Lead_scoring_inference_pipeline/constants.py.log
+home/airflow/logs/scheduler/2024-03-17/Lead_scoring_inference_pipeline/utils.py.log
+home/airflow/logs/scheduler/latest
+home/airflow/logs/dag_processor_manager/
+home/airflow/logs/dag_processor_manager/dag_processor_manager.log
+home/airflow/airflow.db
+home/airflow/.ipynb_checkpoints/
+home/airflow/.ipynb_checkpoints/airflow-checkpoint.cfg
+home/airflow/dags/
+home/airflow/dags/Lead_scoring_training_pipeline/
+home/airflow/dags/Lead_scoring_training_pipeline/utils.py
+home/airflow/dags/Lead_scoring_training_pipeline/__pycache__/
+home/airflow/dags/Lead_scoring_training_pipeline/__pycache__/utils.cpython-38.pyc
+home/airflow/dags/Lead_scoring_training_pipeline/__pycache__/constants.cpython-38.pyc
+home/airflow/dags/Lead_scoring_training_pipeline/__pycache__/lead_scoring_training_pipeline.cpython-38.pyc
+home/airflow/dags/Lead_scoring_training_pipeline/constants.py
+home/airflow/dags/Lead_scoring_training_pipeline/data/
+home/airflow/dags/Lead_scoring_training_pipeline/data/lead_scoring_data_cleaning.db
+home/airflow/dags/Lead_scoring_training_pipeline/data/.ipynb_checkpoints/
+home/airflow/dags/Lead_scoring_training_pipeline/.ipynb_checkpoints/
+home/airflow/dags/Lead_scoring_training_pipeline/lead_scoring_training_pipeline.py
+home/airflow/dags/.ipynb_checkpoints/
+home/airflow/dags/Lead_scoring_data_pipeline/
+home/airflow/dags/Lead_scoring_data_pipeline/data/
+home/airflow/dags/Lead_scoring_data_pipeline/data/lead_scoring_data_cleaning_inference.db
+home/airflow/dags/Lead_scoring_data_pipeline/data/.ipynb_checkpoints/
+home/airflow/dags/Lead_scoring_data_pipeline/.ipynb_checkpoints/
+home/airflow/dags/Lead_scoring_inference_pipeline/
+home/airflow/dags/Lead_scoring_inference_pipeline/utils.py
+home/airflow/dags/Lead_scoring_inference_pipeline/constants.py
+home/airflow/dags/Lead_scoring_inference_pipeline/lead_scoring_inference_pipeline.py
+home/airflow/dags/Lead_scoring_inference_pipeline/__pycache__/
+home/airflow/dags/Lead_scoring_inference_pipeline/__pycache__/lead_scoring_inference_pipeline.cpython-38.pyc
+home/airflow/dags/Lead_scoring_inference_pipeline/__pycache__/constants.cpython-38.pyc
+home/airflow/airflow-webserver.pid
+tar: home/airflow: file changed as we read it
+home/.config/
+home/.config/code-server/
+home/.config/code-server/config.yaml
+home/.config/matplotlib/
+home/.local/
+home/.local/share/
+home/.local/share/code-server/
+home/.local/share/code-server/coder-logs/
+home/.local/share/code-server/coder-logs/code-server-stdout.log
+home/.local/share/code-server/coder-logs/code-server-stderr.log
+home/.local/share/jupyter/
+home/.local/share/jupyter/runtime/
+home/.local/share/jupyter/runtime/notebook_cookie_secret
+home/.local/share/jupyter/runtime/nbserver-158.json
+home/.local/share/jupyter/runtime/nbserver-158-open.html
+home/.local/share/jupyter/runtime/kernel-bf52cdd7-ed30-4a68-b4ca-137caaef4603.json
+home/.local/share/jupyter/runtime/kernel-b6467d61-1eb4-4dbe-aa18-0a212d07b264.json
+home/.local/share/jupyter/runtime/kernel-51801beb-51f1-43f4-ba10-8d29adb132ef.json
+home/.local/share/jupyter/runtime/kernel-84033421-797e-4074-96ed-e797a1988c0a.json
+home/.local/share/jupyter/runtime/kernel-aab8da8c-add9-4386-abe7-6454d7808943.json
+home/.local/share/jupyter/runtime/nbserver-132.json
+home/.local/share/jupyter/runtime/nbserver-132-open.html
+home/.local/share/jupyter/runtime/kernel-9866c8b5-69d5-4cec-af2e-267488b443b9.json
+home/.local/share/jupyter/runtime/kernel-17cf3d06-9dc6-411a-b1ab-381b1587b25b.json
+home/.local/share/jupyter/runtime/kernel-14d8109f-0f4b-42c1-ade3-c833071a2504.json
+home/.local/share/jupyter/runtime/nbserver-133.json
+home/.local/share/jupyter/runtime/nbserver-133-open.html
+home/.local/share/jupyter/runtime/kernel-5a005428-3e1e-4432-88f0-a0d569ab954d.json
+home/.local/share/jupyter/runtime/kernel-e5eb3867-2903-46f0-a5f7-7135a7dc5f8c.json
+home/.local/share/jupyter/runtime/kernel-a776327e-cb69-422d-8aaf-e62ef5f11c6c.json
+home/.local/share/jupyter/runtime/kernel-5c2f0650-19a6-42ea-a1e1-e730532fead8.json
+home/.local/share/jupyter/runtime/kernel-cc93bdc9-1316-47b9-85dd-c347f5b0d83f.json
+home/.local/share/jupyter/runtime/kernel-4c4de039-0f5e-4a0c-9c00-2a45dbeb77d9.json
+home/.local/share/jupyter/nbsignatures.db
+home/.local/share/jupyter/notebook_secret
+home/.local/share/Trash/
+home/.local/share/Trash/files/
+home/.local/share/Trash/files/Assignment/
+home/.local/share/Trash/files/Assignment/01_data_pipeline/
+home/.local/share/Trash/files/Assignment/01_data_pipeline/INSTRUCTIONS.txt
+home/.local/share/Trash/files/Assignment/01_data_pipeline/notebooks/
+home/.local/share/Trash/files/Assignment/01_data_pipeline/notebooks/Data/
+home/.local/share/Trash/files/Assignment/01_data_pipeline/notebooks/Data/cleaned_data.csv
+home/.local/share/Trash/files/Assignment/01_data_pipeline/notebooks/Data/leadscoring.csv
+home/.local/share/Trash/files/Assignment/01_data_pipeline/notebooks/data_cleaning_template.ipynb
+home/.local/share/Trash/files/Assignment/01_data_pipeline/notebooks/Maps/
+home/.local/share/Trash/files/Assignment/01_data_pipeline/notebooks/Maps/.ipynb_checkpoints/
+home/.local/share/Trash/files/Assignment/01_data_pipeline/notebooks/Maps/.ipynb_checkpoints/city_tier-checkpoint.py
+home/.local/share/Trash/files/Assignment/01_data_pipeline/notebooks/Maps/.ipynb_checkpoints/interaction_mapping-checkpoint.csv
+home/.local/share/Trash/files/Assignment/01_data_pipeline/notebooks/Maps/__pycache__/
+home/.local/share/Trash/files/Assignment/01_data_pipeline/notebooks/Maps/__pycache__/city_tier.cpython-37.pyc
+home/.local/share/Trash/files/Assignment/01_data_pipeline/notebooks/Maps/__pycache__/city_tier.cpython-38.pyc
+home/.local/share/Trash/files/Assignment/01_data_pipeline/notebooks/Maps/city_tier.py
+home/.local/share/Trash/files/Assignment/01_data_pipeline/notebooks/Maps/interaction_mapping.csv
+home/.local/share/Trash/files/Assignment/01_data_pipeline/notebooks/profile_report/
+home/.local/share/Trash/files/Assignment/01_data_pipeline/notebooks/profile_report/.ipynb_checkpoints/
+home/.local/share/Trash/files/Assignment/01_data_pipeline/notebooks/profile_report/.ipynb_checkpoints/cleaned_data_report-checkpoint.html
+home/.local/share/Trash/files/Assignment/01_data_pipeline/notebooks/profile_report/cleaned_data_report.html
+home/.local/share/Trash/files/Assignment/01_data_pipeline/notebooks/profile_report/raw_data_report.html
+home/.local/share/Trash/files/Assignment/01_data_pipeline/scripts/
+home/.local/share/Trash/files/Assignment/01_data_pipeline/scripts/city_tier_mapping.py
+home/.local/share/Trash/files/Assignment/01_data_pipeline/scripts/constants.py
+home/.local/share/Trash/files/Assignment/01_data_pipeline/scripts/data/
+home/.local/share/Trash/files/Assignment/01_data_pipeline/scripts/data/leadscoring.csv
+home/.local/share/Trash/files/Assignment/01_data_pipeline/scripts/data_validation_checks.py
+home/.local/share/Trash/files/Assignment/01_data_pipeline/scripts/interaction_mapping.csv
+home/.local/share/Trash/files/Assignment/01_data_pipeline/scripts/lead_scoring_data_pipeline.py
+home/.local/share/Trash/files/Assignment/01_data_pipeline/scripts/leadscoring_test.csv
+home/.local/share/Trash/files/Assignment/01_data_pipeline/scripts/schema.py
+home/.local/share/Trash/files/Assignment/01_data_pipeline/scripts/significant_categorical_level.py
+home/.local/share/Trash/files/Assignment/01_data_pipeline/scripts/test_with_pytest.py
+home/.local/share/Trash/files/Assignment/01_data_pipeline/scripts/unit_test_cases.db
+home/.local/share/Trash/files/Assignment/01_data_pipeline/scripts/utils.py
+home/.local/share/Trash/files/Assignment/02_training_pipeline/
+home/.local/share/Trash/files/Assignment/02_training_pipeline/INSTRUCTIONS_training.txt
+home/.local/share/Trash/files/Assignment/02_training_pipeline/notebooks/
+home/.local/share/Trash/files/Assignment/02_training_pipeline/notebooks/Data/
+home/.local/share/Trash/files/Assignment/02_training_pipeline/notebooks/lead_scoring_model_experimentation.ipynb
+home/.local/share/Trash/files/Assignment/02_training_pipeline/scripts/
+home/.local/share/Trash/files/Assignment/02_training_pipeline/scripts/constants.py
+home/.local/share/Trash/files/Assignment/02_training_pipeline/scripts/lead_scoring_training_pipeline.py
+home/.local/share/Trash/files/Assignment/02_training_pipeline/scripts/utils.py
+home/.local/share/Trash/files/Assignment/03_inference_pipeline/
+home/.local/share/Trash/files/Assignment/03_inference_pipeline/data/
+home/.local/share/Trash/files/Assignment/03_inference_pipeline/data/leadscoring_inference.csv
+home/.local/share/Trash/files/Assignment/03_inference_pipeline/INSTRUCTIONS_inference.txt
+home/.local/share/Trash/files/Assignment/03_inference_pipeline/scripts/
+home/.local/share/Trash/files/Assignment/03_inference_pipeline/scripts/constants.py
+home/.local/share/Trash/files/Assignment/03_inference_pipeline/scripts/lead_scoring_inference_pipeline.py
+home/.local/share/Trash/files/Assignment/03_inference_pipeline/scripts/utils.py
+home/.local/share/Trash/files/data_cleaning_template.ipynb
+home/.local/share/Trash/files/Untitled.ipynb
+home/.local/share/Trash/info/
+home/.local/share/Trash/info/Assignment.trashinfo
+home/.local/share/Trash/info/data_cleaning_template.ipynb.trashinfo
+home/.local/share/Trash/info/Untitled.ipynb.trashinfo
+home/.jupyter/
+home/.jupyter/migrated
+home/.jupyter/lab/
+home/.jupyter/lab/workspaces/
+home/.jupyter/lab/workspaces/default-37a8.jupyterlab-workspace
+home/.jupyter/lab/workspaces/auto-d-8a94.jupyterlab-workspace
+home/.jupyter/lab/workspaces/auto-7-ab6f.jupyterlab-workspace
+home/.ipynb_checkpoints/
+home/.cache/
+home/.cache/pip/
+home/.cache/pip/http/
+home/.cache/pip/http/a/
+home/.cache/pip/http/a/1/
+home/.cache/pip/http/a/1/9/
+home/.cache/pip/http/a/1/9/5/
+home/.cache/pip/http/a/1/9/5/3/
+home/.cache/pip/http/a/1/9/5/3/a19537d3cf37c122db841d6fe4cd322bc10d1a558bb00d146b85cb9a
+home/.cache/pip/http/4/
+home/.cache/pip/http/4/f/
+home/.cache/pip/http/4/f/0/
+home/.cache/pip/http/4/f/0/7/
+home/.cache/pip/http/4/f/0/7/7/
+home/.cache/pip/http/4/f/0/7/7/4f0777a90bba04f2f82ba7e4254c192855e153ed24d9f3bee10c28c5
+home/.cache/pip/http/d/
+home/.cache/pip/http/d/3/
+home/.cache/pip/http/d/3/3/
+home/.cache/pip/http/d/3/3/c/
+home/.cache/pip/http/d/3/3/c/5/
+home/.cache/pip/http/d/3/3/c/5/d33c5caf855a224e0c781092005779bc7422a6128b86b9842036b6bf
+home/.cache/pip/selfcheck/
+home/.cache/pip/selfcheck/ab2bb442149194bcbab5700d8f932112632ba9320db09910f4a4422b
+home/.cache/pip/wheels/
+home/.cache/pip/wheels/db/
+home/.cache/pip/wheels/db/56/
+home/.cache/pip/wheels/db/56/22/
+home/.cache/pip/wheels/db/56/22/efcc8a72dd2e0ce8c7fcf8cf93a84a1ce5f01f5479e82a1823/
+home/.cache/pip/wheels/db/56/22/efcc8a72dd2e0ce8c7fcf8cf93a84a1ce5f01f5479e82a1823/maps-5.1.1-py3-none-any.whl
+home/.cache/matplotlib/
+home/.cache/matplotlib/fontlist-v330.json
+home/.cache/jedi/
+home/.cache/jedi/CPython-38-33/
+home/.cache/jedi/CPython-38-33/29eef7fec4dc8afb41b76ae425aa0d6225daff32de9e10abf7a1ce54fa5907f1-7d91c8c08b1c6a252e170833a5d732acbe7b2ff0178345bd6de6db33991ac5fc.pkl
+home/.cache/jedi/CPython-38-33/29eef7fec4dc8afb41b76ae425aa0d6225daff32de9e10abf7a1ce54fa5907f1-8c19dca9082476a0d88afb5463be716b9248c3bf3ad5a307ae5356c549a59f71.pkl
+home/.cache/jedi/PARSO-CACHE-LOCK
+home/Assignment.zip
+home/Assignment/
+home/Assignment/01_data_pipeline/
+home/Assignment/01_data_pipeline/INSTRUCTIONS.txt
+home/Assignment/01_data_pipeline/notebooks/
+home/Assignment/01_data_pipeline/notebooks/Data/
+home/Assignment/01_data_pipeline/notebooks/Data/cleaned_data.csv
+home/Assignment/01_data_pipeline/notebooks/Data/leadscoring.csv
+home/Assignment/01_data_pipeline/notebooks/data_cleaning_template.ipynb
+home/Assignment/01_data_pipeline/notebooks/Maps/
+home/Assignment/01_data_pipeline/notebooks/Maps/.ipynb_checkpoints/
+home/Assignment/01_data_pipeline/notebooks/Maps/.ipynb_checkpoints/city_tier-checkpoint.py
+home/Assignment/01_data_pipeline/notebooks/Maps/.ipynb_checkpoints/interaction_mapping-checkpoint.csv
+home/Assignment/01_data_pipeline/notebooks/Maps/__pycache__/
+home/Assignment/01_data_pipeline/notebooks/Maps/__pycache__/city_tier.cpython-37.pyc
+home/Assignment/01_data_pipeline/notebooks/Maps/__pycache__/city_tier.cpython-38.pyc
+home/Assignment/01_data_pipeline/notebooks/Maps/city_tier.py
+home/Assignment/01_data_pipeline/notebooks/Maps/interaction_mapping.csv
+home/Assignment/01_data_pipeline/notebooks/profile_report/
+home/Assignment/01_data_pipeline/notebooks/profile_report/.ipynb_checkpoints/
+home/Assignment/01_data_pipeline/notebooks/profile_report/.ipynb_checkpoints/cleaned_data_report-checkpoint.html
+home/Assignment/01_data_pipeline/notebooks/profile_report/cleaned_data_report.html
+home/Assignment/01_data_pipeline/notebooks/profile_report/raw_data_report.html
+home/Assignment/01_data_pipeline/notebooks/.ipynb_checkpoints/
+home/Assignment/01_data_pipeline/notebooks/.ipynb_checkpoints/data_cleaning_template-checkpoint.ipynb
+home/Assignment/01_data_pipeline/scripts/
+home/Assignment/01_data_pipeline/scripts/city_tier_mapping.py
+home/Assignment/01_data_pipeline/scripts/constants.py
+home/Assignment/01_data_pipeline/scripts/data/
+home/Assignment/01_data_pipeline/scripts/data/leadscoring.csv
+home/Assignment/01_data_pipeline/scripts/data_validation_checks.py
+home/Assignment/01_data_pipeline/scripts/interaction_mapping.csv
+home/Assignment/01_data_pipeline/scripts/lead_scoring_data_pipeline.py
+home/Assignment/01_data_pipeline/scripts/leadscoring_test.csv
+home/Assignment/01_data_pipeline/scripts/schema.py
+home/Assignment/01_data_pipeline/scripts/significant_categorical_level.py
+home/Assignment/01_data_pipeline/scripts/test_with_pytest.py
+home/Assignment/01_data_pipeline/scripts/unit_test_cases.db
+home/Assignment/01_data_pipeline/scripts/utils.py
+home/Assignment/01_data_pipeline/scripts/.ipynb_checkpoints/
+home/Assignment/01_data_pipeline/scripts/.ipynb_checkpoints/utils-checkpoint.py
+home/Assignment/01_data_pipeline/scripts/.ipynb_checkpoints/constants-checkpoint.py
+home/Assignment/01_data_pipeline/.ipynb_checkpoints/
+home/Assignment/01_data_pipeline/.ipynb_checkpoints/INSTRUCTIONS-checkpoint.txt
+home/Assignment/03_inference_pipeline/
+home/Assignment/03_inference_pipeline/data/
+home/Assignment/03_inference_pipeline/data/leadscoring_inference.csv
+home/Assignment/03_inference_pipeline/INSTRUCTIONS_inference.txt
+home/Assignment/03_inference_pipeline/scripts/
+home/Assignment/03_inference_pipeline/scripts/constants.py
+home/Assignment/03_inference_pipeline/scripts/lead_scoring_inference_pipeline.py
+home/Assignment/03_inference_pipeline/scripts/utils.py
+home/Assignment/03_inference_pipeline/scripts/.ipynb_checkpoints/
+home/Assignment/03_inference_pipeline/scripts/.ipynb_checkpoints/constants-checkpoint.py
+home/Assignment/03_inference_pipeline/scripts/.ipynb_checkpoints/utils-checkpoint.py
+home/Assignment/03_inference_pipeline/scripts/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py
+home/Assignment/mlruns/
+home/Assignment/Lead_scoring_mlflow_production.db
+home/Assignment/777/
+home/Assignment/training_pipeline/
+home/Assignment/training_pipeline/INSTRUCTIONS_training.txt
+home/Assignment/training_pipeline/notebooks/
+home/Assignment/training_pipeline/notebooks/Data/
+home/Assignment/training_pipeline/notebooks/Data/cleaned_data.csv
+home/Assignment/training_pipeline/notebooks/lead_scoring_model_experimentation.ipynb
+home/Assignment/training_pipeline/notebooks/.ipynb_checkpoints/
+home/Assignment/training_pipeline/notebooks/.ipynb_checkpoints/lead_scoring_model_experimentation-checkpoint.ipynb
+home/Assignment/training_pipeline/notebooks/logs.log
+home/Assignment/training_pipeline/notebooks/lead_scoring_model_experimentation.db
+home/Assignment/training_pipeline/scripts/
+home/Assignment/training_pipeline/scripts/constants.py
+home/Assignment/training_pipeline/scripts/lead_scoring_training_pipeline.py
+home/Assignment/training_pipeline/scripts/utils.py
+home/Assignment/training_pipeline/scripts/.ipynb_checkpoints/
+home/Assignment/training_pipeline/scripts/.ipynb_checkpoints/lead_scoring_training_pipeline-checkpoint.py
+home/Assignment/training_pipeline/scripts/.ipynb_checkpoints/utils-checkpoint.py
+home/Assignment/training_pipeline/scripts/.ipynb_checkpoints/constants-checkpoint.py
+home/Assignment/training_pipeline/scripts/mlruns/
+home/Assignment/training_pipeline/scripts/mlruns/0/
+home/Assignment/training_pipeline/scripts/mlruns/0/meta.yaml
+home/Assignment/training_pipeline/scripts/mlruns/.trash/
+home/Assignment/training_pipeline/.ipynb_checkpoints/
+home/Assignment/training_pipeline/.ipynb_checkpoints/INSTRUCTIONS_training-checkpoint.txt
+home/Assignment/.ipynb_checkpoints/
+home/mlruns/
+home/dags.tar
+home/dashboard.tar
+home/database.tar
+home/scripts.tar
+home/notebooks.tar
+root@bd079ac964cf:/# 
